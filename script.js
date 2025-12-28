@@ -1,17 +1,15 @@
-const button = document.getElementById('wishBtn');
+const button = document.getElementById('multiplyBtn');
 
 
+function multiplyNumber(){
 
-function wishNewYear(){
+    let x = document.getElementById('firstNumber').value;
+    let y = document.getElementById('secondNumber').value;
 
-    let userName = document.getElementById('nameInput').value;
-    let message = "🎊 Happy New Year 2025, "+ userName;
-
-    document.getElementById('message').innerHTML=message;
-
-    console.log(message);
-
+    let z = (x*y)
+    
+    document.getElementById('result').innerHTML=z;
 
 };
 
- button.addEventListener('click', wishNewYear);
+    button.addEventListener('click', multiplyNumber);

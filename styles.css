@@ -39,17 +39,17 @@ button {
   padding: 10px;
   border-radius: 8px;
   border: none;
-  background: #38bdf8;
+  background: #22c55e;
   color: #020617;
   font-size: 16px;
   cursor: pointer;
 }
 
 button:hover {
-  background: #0ea5e9;
+  background: #16a34a;
 }
 
-#message {
+#result {
   margin-top: 16px;
   font-size: 16px;
   color: #94a3b8;
