@@ -13,9 +13,6 @@ if (ageInput > 18) {
 } else{
     alert('Sorry too young');
 }
-
-
-button.addEventListener('click', ageInput);
-
-
+document.getElementById('resultText').innerHTML="Your age is " + ageInput;
 });
+
