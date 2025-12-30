@@ -3,32 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JS Arrays Practice</title>
+  <title>Age Checker</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <div class="container">
-    <h1>Student Scores Manager</h1>
+    <h1>Age Checker</h1>
 
     <div class="card">
-      <p><strong>Initial Scores:</strong></p>
-      <p id="scoresDisplay">[45, 67, 89, 34, 90]</p>
+      <label for="ageInput">Enter your age</label>
+      <input type="number" id="ageInput" placeholder="e.g. 18" />
 
-      <button id="processBtn">Process Scores</button>
-    </div>
+      <button id="checkBtn">Check Age</button>
 
-    <div class="card">
-      <h3>Results</h3>
-      <p id="updatedScores">Updated Scores:</p>
-      <p id="totalScore">Total:</p>
-      <p id="averageScore">Average:</p>
-      <p id="passedScores">Passed Scores:</p>
-      <p id="sortedScores">Sorted Scores:</p>
+      <p id="resultText">Result will appear here</p>
     </div>
   </div>
 
-  <!-- YOU will write this file -->
+  <!-- YOU will write the JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>

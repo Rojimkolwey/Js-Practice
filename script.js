@@ -1,5 +1,21 @@
-const scoreText = document.getElementById('scoresDisplay').textContent;
 
-const score = JSON.parse(scoreText);
+const button = document.getElementById('checkBtn');
 
-console.log(score[0]);
+
+
+button.addEventListener('click', function(){
+
+    const ageInput = document.getElementById('ageInput').value;
+
+if (ageInput > 18) {
+    alert('User is old Enough');
+    
+} else{
+    alert('Sorry too young');
+}
+
+
+button.addEventListener('click', ageInput);
+
+
+});
