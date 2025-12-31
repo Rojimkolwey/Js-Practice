@@ -7,7 +7,7 @@ button.addEventListener('click', function(){
 
     const ageInput = document.getElementById('ageInput').value;
 
-if (ageInput > 18) {
+if (ageInput >= 18) {
     alert('User is old Enough');
     
 } else{
