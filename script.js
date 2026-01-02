@@ -1,48 +1,52 @@
+const num1 = document.getElementById('num1');
+const num2 = document.getElementById('num2');
+const results = document.getElementById('result');
 
-// const button = document.getElementById('checkBtn');
+const addButton = document.getElementById('add');
+const subtractButton = document.getElementById('subtract');
+const multiplyButton = document.getElementById('multiply');
+const divideButton = document.getElementById('divide');
+const equalsButton = document.getElementById('equals');
 
-// button.addEventListener('click', function () {
-//   try {
-//     const ageInput = document.getElementById('ageInput').value;
+let currentOperation = '';
 
-//     if (ageInput === "") {
-//       throw "Age cannot be empty";
-//     }
+addButton.addEventListener('click', function (){
 
-//     const age = Number(ageInput);
+    currentOperation = '+';
+    console.log ('the current opartion id assigned to' , currentOperation);
+});
 
-//     if (isNaN(age)) {
-//       throw "Age must be a number";
-//     }
 
-//     if (age >= 18) {
-//       resultText.innerHTML = "You are old enough";
-//     } else {
-//       resultText.innerHTML = "Sorry, you are too young";
-//     }
+subtractButton.addEventListener('click', function(){
+    currentOperation ="-"
+    console.log (currentOperation);
 
-//   } catch (error) {
-//     resultText.innerHTML = error;
-//   }
+});
+
+multiplyButton.addEventListener('click', function(){
+    currentOperation = '×'
+     console.log (currentOperation);
+
+});
+
+divideButton.addEventListener('click', function(){
+    currentOperation = '÷'
+     console.log (currentOperation);
+
+});
+
+
+
+
+
+
+// const operatorButtons = document.querySelectorAll('.buttons button');
+
+// operatorButtons.forEach(button => {
+//     button.addEventListener('click', (event) => {
+//           currentOperation = event.target.innerText;
+//           console.log("Current operation set to:", currentOperation);
+//     });
+
+
 // });
-
-// try {
-//   // risky code
-// } catch (error) {
-//   console.log(error);
-// } finally {
-//   console.log("Check completed");
-// }
-
-const date = new Date;
-
-
-const fruits =["mango", "eggs", "eggs", "eggs", "caots", "eggs", "eggs", "eggs", "eggs", "eggs"];
-
-for( let i=0; i<=fruits.length; i++){
-
- console.log(fruits[i]);
-
-};
-
-console.log(date.getFullYear());
