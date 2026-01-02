@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Age Checker</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <title>JS Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .calculator {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        button {
+            width: 48%;
+            padding: 8px;
+            margin: 3px 1%;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>Age Checker</h1>
+<div class="calculator">
+    <input type="number" id="num1" placeholder="First number">
+    <input type="number" id="num2" placeholder="Second number">
 
-    <div class="card">
-      <label for="ageInput">Enter your age</label>
-      <input type="number" id="ageInput" placeholder="e.g. 18" />
+    <button id="add">+</button>
+    <button id="subtract">−</button>
+    <button id="multiply">×</button>
+    <button id="divide">÷</button>
 
-      <button id="checkBtn">Check Age</button>
+    <div id="result">Result: </div>
+</div>
 
-      <p id="resultText">Result will appear here</p>
-    </div>
-  </div>
-
-  <!-- YOU will write the JavaScript -->
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

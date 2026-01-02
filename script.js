@@ -34,8 +34,15 @@
 //   console.log("Check completed");
 // }
 
+const date = new Date;
 
 
-const fruits =["mango", "eggs"];
+const fruits =["mango", "eggs", "eggs", "eggs", "caots", "eggs", "eggs", "eggs", "eggs", "eggs"];
 
- console.log(fruits[0]);
+for( let i=0; i<=fruits.length; i++){
+
+ console.log(fruits[i]);
+
+};
+
+console.log(date.getFullYear());
