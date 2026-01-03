@@ -36,6 +36,40 @@ divideButton.addEventListener('click', function(){
 });
 
 
+equalsButton.addEventListener('click', function(){
+ const value1 = Number(num1.value);
+ const value2 = Number(num2.value);
+
+
+ if (currentOperation === "+"){
+
+   addition = (value1+value2)
+   console.log(addition);
+}
+
+else if(currentOperation ==='-'){
+
+    subtraction=(value1-value2);
+console.log(subtraction);
+}
+
+
+if(currentOperation === '×'){
+
+    multiply=(value1*value2);
+     console.log(multiply);
+}
+
+else if(currentOperation === '÷'){
+
+    divide=(value1/value2);
+    console.log(divide)
+}
+
+});
+
+
+
 
 
 
