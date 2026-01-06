@@ -1,29 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>JS Calculator</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<div class="calculator">
-    <input type="number" id="num1" placeholder="First number">
-    <input type="number" id="num2" placeholder="Second number">
+  <div class="container">
+    <form class="signup-form" novalidate>
+      <h2>Create Account</h2>
+      <p class="subtitle">Sign up to get started</p>
 
-    <div class="buttons">
-        <button id="add">+</button>
-        <button id="subtract">−</button>
-        <button id="multiply">×</button>
-        <button id="divide">÷</button>
-        <button id="equals">=</button>
-        <button id="clear">C</button>
-    </div>
+      <!-- Full Name -->
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="John Doe" />
+        <small class="error-message"></small>
+      </div>
 
-    <div id="result">Result:</div>
-</div>
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="john@example.com" />
+        <small class="error-message"></small>
+      </div>
 
-<script src="script.js"></script>
+      <!-- Password -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Minimum 8 characters" />
+        <small class="error-message"></small>
+      </div>
+
+      <!-- Confirm Password -->
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Re-enter password" />
+        <small class="error-message"></small>
+      </div>
+
+      <!-- Terms -->
+      <div class="form-group checkbox-group">
+        <input type="checkbox" id="terms" />
+        <label for="terms">I agree to the terms and conditions</label>
+      </div>
+      <small class="error-message checkbox-error"></small>
+
+      <button type="submit">Create Account</button>
+
+      <p class="login-text">
+        Already have an account? <a href="#">Log in</a>
+      </p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
