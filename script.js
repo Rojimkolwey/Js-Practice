@@ -53,18 +53,18 @@ showError(email, emailError, 'Enter Email');
 
   }
   else if (confirmPasswordValue === ''){
-    showError(confirmPassword, passwordError, 'Confirm Password');;
+    showError(confirmPassword, confirmPasswordError, 'Confirm Password');;
   
   }
-  
+
   else if(confirmPasswordValue.length<5){
-   showError(fullName, fullNameError, 'Password Must contain 5 Characters');
+   showError(confirmPassword, confirmPasswordError, 'Password Must contain 5 Characters');
   }
   
 
   else if(passwordValue !== confirmPasswordValue){
   
-    showError(fullName, fullNameError, 'Password dont Match');;
+    showError(confirmPassword, confirmPasswordError, 'Password dont Match');;
 
   }
 
@@ -74,11 +74,29 @@ showError(email, emailError, 'Enter Email');
   }
 
   else{
-    alert('Sign Up Successfully');
-  
+    alert('Sign up Successfully');
+     setTimeout(function(){
+      window.location.href('dashboard.html');
+
+     }, 2000);
   }
  
-
 })
 
+fullName.addEventListener('input', function(){
 
+  clearError(fullName, fullNameError)
+})
+
+email.addEventListener('input', function(){
+
+  clearError(email, emailError)
+})
+password.addEventListener('input', function(){
+
+  clearError(password, passwordError)
+})
+confirmPassword.addEventListener('input', function(){
+
+  clearError(confirmPassword,confirmPasswordError)
+})
