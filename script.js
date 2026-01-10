@@ -6,7 +6,7 @@ const confirmPassword= document.getElementById('confirmPassword');
 const checkBox = document.getElementById('terms');
 const btn = document.getElementById('createAccount');
 
-// error mesage
+// form error mesage
 
 const fullNameError = document.getElementById('fullname-error');
 const emailError = document.getElementById('email-error');
@@ -47,6 +47,11 @@ form.addEventListener('submit', function(e){
 showError(email, emailError, 'Enter Email');
   }
 
+  else if ( !emailValue.includes("@") || !emailValue.includes('.') ){
+
+    showError(email, emailError, "email doesn't have @ OR doesn't have .")
+  }
+
   else if(passwordValue===''){
    showError(password, passwordError, 'Enter Password');
    
@@ -74,11 +79,10 @@ showError(email, emailError, 'Enter Email');
   }
 
   else{
-    alert('Sign up Successfully');
      setTimeout(function(){
-      window.location.href('dashboard.html');
+      window.location.href='dashboard.html';
 
-     }, 2000);
+     }, 1000);
   }
  
 })
