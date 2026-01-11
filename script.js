@@ -5,6 +5,8 @@ const password = document.getElementById('password');
 const confirmPassword= document.getElementById('confirmPassword');
 const checkBox = document.getElementById('terms');
 const btn = document.getElementById('createAccount');
+const togglePasswordBtn =document.getElementById('togglePassword');
+const toggleConfirmPasswordBtn =document.getElementById('toggleConfirmPassword');
 
 // form error mesage
 
@@ -12,6 +14,10 @@ const fullNameError = document.getElementById('fullname-error');
 const emailError = document.getElementById('email-error');
 const passwordError = document.getElementById('password-error');
 const confirmPasswordError = document.getElementById('confirmPassword-error');
+
+
+
+console.log('it working');
 
 
 function showError(input, errorElement, mesage){
@@ -104,3 +110,35 @@ confirmPassword.addEventListener('input', function(){
 
   clearError(confirmPassword,confirmPasswordError)
 })
+
+togglePasswordBtn.addEventListener('click', function(){
+ if(password.type==='password'){
+
+  password.type='text';
+
+ }
+ else{
+  password.type='password';
+ }
+
+
+})
+
+toggleConfirmPasswordBtn.addEventListener('click', function(){
+
+  if(confirmPassword.type ==='password'){
+    confirmPassword.type='text'
+  }
+  else{
+    confirmPassword.type='password'
+  }
+})
+
+
+
+
+// //log out
+
+// function logOut(){
+//   wundow.location.href= 'index.html'
+// }

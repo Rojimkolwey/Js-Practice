@@ -28,16 +28,23 @@
       </div>
 
       <!-- Password -->
-      <div class="form-group">
+     <div class="form-group">
         <label for="password">Password</label>
+        <div style="position: relative;">
         <input type="password" id="password" placeholder="Minimum 8 characters" />
-        <small class="error-message" id="password-error"></small>
-      </div>
+        <span id="togglePassword" style="position: absolute; right: 10px; top: 10px; cursor: pointer;">👁️</span>
+   </div>
+  <small class="error-message" id="password-error"></small>
+</div>
 
       <!-- Confirm Password -->
       <div class="form-group">
         <label for="confirmPassword">Confirm Password</label>
+        <div style="position: relative;">
         <input type="password" id="confirmPassword" placeholder="Re-enter password" />
+        <span id="toggleConfirmPassword" style="position: absolute; right: 10px; top: 10px; cursor: pointer;">👁️</span>
+        </div>
+
         <small class="error-message" id="confirmPassword-error"></small>
       </div>
 
