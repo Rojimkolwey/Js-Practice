@@ -86,7 +86,7 @@ showError(email, emailError, 'Enter Email');
 
   else{
      setTimeout(function(){
-      window.location.href='dashboard.html';
+      window.location.replace('dashboard.html');
 
      }, 1000);
   }
@@ -111,6 +111,8 @@ confirmPassword.addEventListener('input', function(){
   clearError(confirmPassword,confirmPasswordError)
 })
 
+//view button toggle iconn
+
 togglePasswordBtn.addEventListener('click', function(){
  if(password.type==='password'){
 
@@ -127,18 +129,12 @@ togglePasswordBtn.addEventListener('click', function(){
 toggleConfirmPasswordBtn.addEventListener('click', function(){
 
   if(confirmPassword.type ==='password'){
-    confirmPassword.type='text'
+    confirmPassword.type='text';
   }
   else{
-    confirmPassword.type='password'
+    confirmPassword.type='password';
   }
 })
 
 
 
-
-// //log out
-
-// function logOut(){
-//   wundow.location.href= 'index.html'
-// }
