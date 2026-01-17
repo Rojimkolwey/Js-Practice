@@ -6,6 +6,7 @@ const mealDisplay = document.getElementById('mealDisplay');
 const mealCategory =document.getElementById('mealCategory');
 const mealArea = document.getElementById('mealArea');
 const mealImage = document.getElementById('mealImage')
+const mmealInstructions = document.getElementById('mealInstructions');
 
 
 // //log out
@@ -35,6 +36,7 @@ mealName.innerHTML = meal.strMeal;
 mealCategory.innerHTML = meal.strCategory;
 mealArea.innerHTML = meal.strArea;
 mealImage.src = meal.strMealThumb;
+mealInstructions.innerHTML = meal.strInstructions;
 
 
 

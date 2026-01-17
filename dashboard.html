@@ -96,6 +96,32 @@
             font-size: 16px;
         }
 
+        /* Filter Buttons */
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .filters button {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+            padding: 10px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .filters button:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            transform: translateY(-2px);
+        }
+
         /* Generate Button */
         #getMealBtn {
             display: block;
@@ -240,6 +266,15 @@
             .welcome h2 {
                 font-size: 28px;
             }
+
+            .filters {
+                gap: 10px;
+            }
+
+            .filters button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -262,6 +297,14 @@
             <div class="generator-header">
                 <h3>🎲 Random Meal Generator</h3>
                 <p>Click the button below to discover a new recipe</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filters">
+                <button id="filterBreakfast">🍳 Breakfast</button>
+                <button id="filterDessert">🍰 Dessert</button>
+                <button id="filterSeafood">🦞 Seafood</button>
+                <button id="filterVegetarian">🥗 Vegetarian</button>
             </div>
 
             <button id="getMealBtn">Generate Random Meal</button>
