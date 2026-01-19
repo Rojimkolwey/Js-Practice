@@ -18,7 +18,7 @@ const filterVegetarian=document.getElementById('filterVegetarian');
 // //log out
 logoutBtn.addEventListener('click', function(){
 
-  window.location.href= 'index.html'
+  window.location.href= 'log in.html'
 
 })
 
@@ -87,7 +87,24 @@ function getMealByCategory(category) {
 }
 
 filterBreakfast.addEventListener('click', function() {
-  getMealByCategory('Breakfast');
+    getMealByCategory('Breakfast');
   console.log('clicked')
 });
+
+
+filterDessert.addEventListener('click', function() {
+ getMealByCategory('Dessert');
+});
+
+filterDessert.addEventListener('click', function() {
+ getMealByCategory('Dessert');
+});
+filterSeafood.addEventListener('click', function() {
+ getMealByCategory('seaFood');
+});
+filterVegetarian.addEventListener('click', function() {
+ getMealByCategory('Vegetarian');
+});
+
+
 
